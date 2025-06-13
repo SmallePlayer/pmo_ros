@@ -1,0 +1,56 @@
+# Файлы .gitignore для Python проекта
+
+### Python ###
+# Байт-код
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Временные файлы
+*.log
+*.pot
+*.pyc
+
+# Файлы окружения
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# Результаты тестов и покрытия
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+.mypy_cache/
+
+
+.vscode/
+*.code-workspace
+
+
+### Пакеты и дистрибуция ###
+# Установленные пакеты
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+lib/
+lib64/
+
+# Пакетные менеджеры
+Pipfile
+Pipfile.lock
+poetry.lock
+pyproject.toml  # если не используете poetry, но обычно лучше коммитить
+requirements.txt  # коммитить, если специально не генерируется
